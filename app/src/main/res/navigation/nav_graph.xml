@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cinemaFragment">
+
+    <fragment
+        android:id="@+id/cinemaFragment"
+        android:name="com.geektech.myapplication.ui.fragments.CinemaFragment"
+        android:label="fragment_cinema"
+        tools:layout="@layout/fragment_cinema" >
+        <action
+            android:id="@+id/action_cinemaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.geektech.myapplication.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/languagesFragment2"
+        android:name="com.geektech.myapplication.ui.fragments.LanguagesFragment"
+        android:label="fragment_languages"
+        tools:layout="@layout/fragment_languages" >
+        <action
+            android:id="@+id/action_languagesFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nationFragment"
+        android:name="com.geektech.myapplication.ui.fragments.NationFragment"
+        android:label="fragment_nation"
+        tools:layout="@layout/fragment_nation" >
+        <action
+            android:id="@+id/action_nationFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

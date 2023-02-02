@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cinemaFragment"
+        android:title="@string/cinema"/>
+
+    <item
+        android:id="@+id/languagesFragment2"
+        android:title="@string/languages"/>
+
+    <item
+        android:id="@+id/nationFragment"
+        android:title="@string/nation"/>
+
+</menu>
