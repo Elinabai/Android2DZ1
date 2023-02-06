@@ -31,12 +31,13 @@ class CinemaFragment : Fragment(), ItemClick {
         super.onViewCreated(view, savedInstanceState)
 
         clear()
-        listCinema.addAll(repository.getListOfCatHTP())
-        binding.rvCinema.adapter = adapter
+        initialization()
+
     }
 
-    private fun clear() {
-        listCinema.clear()
+    private fun initialization(){
+        listCinema.addAll(repository.getListOfCatHTP())
+        binding.rvCinema.adapter = adapter
     }
 
     override fun onItemClick(textModel: TextModel) {
@@ -44,5 +45,9 @@ class CinemaFragment : Fragment(), ItemClick {
             textModel.image,
             textModel.name)
         )
+    }
+
+    private fun clear() {
+        listCinema.clear()
     }
 }

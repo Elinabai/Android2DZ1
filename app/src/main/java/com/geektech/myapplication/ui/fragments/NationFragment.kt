@@ -28,6 +28,10 @@ class NationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        initialization()
+    }
+
+    private fun initialization(){
         listNation.addAll(repository.getListOfCatHTP())
         binding.rvNation.adapter = adapter
     }

@@ -3,14 +3,17 @@
 
     <item
         android:id="@+id/cinemaFragment"
+        android:icon="@drawable/ic_baseline_play_circle_24"
         android:title="@string/cinema"/>
 
     <item
         android:id="@+id/languagesFragment2"
+        android:icon="@drawable/ic_baseline_translate_24"
         android:title="@string/languages"/>
 
     <item
         android:id="@+id/nationFragment"
+        android:icon="@drawable/ic_baseline_public_24"
         android:title="@string/nation"/>
 
 </menu>

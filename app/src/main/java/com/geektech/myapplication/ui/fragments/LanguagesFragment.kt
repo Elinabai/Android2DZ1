@@ -27,6 +27,11 @@ class LanguagesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        initialization()
+    }
+
+    private fun initialization(){
         listLanguages.addAll(repository.getListOfCatHTP())
         binding.rvLanguages.adapter = adapter
     }
